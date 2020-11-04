@@ -1,0 +1,14 @@
+.winner {
+  color: green;
+  transition: ease 1s;
+}
+
+.loser {
+  color: red;
+  transition: ease 1s;
+}
+
+.game {
+  color: black;
+  transition: ease 1s;
+}
