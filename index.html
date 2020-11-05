@@ -4,22 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Score keeper</title>
   </head>
   <body>
-    <h1>
-      <span id="p1Display">0</span> to
-      <span id="p2Display">0</span>
-    </h1>
-    <select name="" id="playto">
-      <option value="5">5</option>
-      <option value="6">6</option>
-      <option value="7">7</option>
-      <option value="8">8</option>
-    </select>
-    <button id="p1Button">+1 Player One</button>
-    <button id="p2Button">+1 Player Two</button>
-    <button id="reset">Reset</button>
+    <div class="scoreContainer">
+      <h1>Score Keeper!</h1>
+      <label for="playto">Score to Win:</label>
+      <input type="number" name="" id="playto" placeholder="5" />
+
+      <h3>
+        <span id="p1Display">0</span> to
+        <span id="p2Display">0</span>
+      </h3>
+
+      <div class="buttonContainer">
+        <button id="p1Button">+1 Player One</button>
+        <button id="p2Button">+1 Player Two</button>
+      </div>
+
+      <div class="resetButton">
+        <button id="reset">Reset</button>
+      </div>
+    </div>
     <script src="app.js"></script>
   </body>
 </html>

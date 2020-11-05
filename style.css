@@ -1,14 +1,110 @@
+/* Game States */
 .winner {
   color: green;
   transition: ease 1s;
 }
-
 .loser {
   color: red;
   transition: ease 1s;
 }
-
 .game {
   color: black;
   transition: ease 1s;
+}
+
+/* Styling*/
+body {
+  background-color: #ffb4a2;
+}
+.scoreContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: full;
+  height: full;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+
+  font-family: "Sigmar One", cursive;
+}
+
+h1 {
+  color: white;
+  font-size: 100px;
+}
+
+label {
+  font-size: 85px;
+  color: white;
+}
+
+#playto {
+  text-align: center;
+  font-size: 100px;
+  border-color: white;
+  width: 300px;
+  border-radius: 30%;
+  border-width: 1px;
+  font-family: "Sigmar One", cursive;
+  background-color: transparent;
+  margin: 25px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+h3 {
+  font-size: 100px;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#p1Button {
+  display: inline-block;
+  font-family: "Sigmar One", cursive;
+  background-color: transparent;
+  border-color: white;
+  border-radius: 25px;
+  color: white;
+  font-size: 50px;
+  margin: 25px;
+}
+
+#p2Button {
+  display: inline-block;
+  font-family: "Sigmar One", cursive;
+  background-color: transparent;
+  border-color: white;
+  font-size: 50px;
+  margin: 25px;
+  border-radius: 25px;
+  color: white;
+}
+
+.resetButton {
+  display: flex;
+  justify-content: center;
+}
+
+#reset {
+  display: inline-block;
+  font-family: "Sigmar One", cursive;
+  background-color: transparent;
+  border-color: white;
+  font-size: 50px;
+  margin: 25px;
+  color: red;
+  border-radius: 25px;
 }

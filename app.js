@@ -26,7 +26,9 @@ function p1Win() {
   }
 }
 
-function p2Win() {
+p1Button.addEventListener("click", p1Win);
+
+p2Button.addEventListener("click", function () {
   if (!isGameOver) {
     p2Score += 1;
     if (p2Score === winningScore) {
@@ -38,16 +40,14 @@ function p2Win() {
     }
     p2Display.textContent = p2Score;
   }
-}
-
-p1Button.addEventListener("click", p1Win);
-p2Button.addEventListener("click", p1Win);
-reset.addEventListener("click", resetGame);
+});
 
 scoreSelect.addEventListener("change", function () {
   winningScore = parseInt(this.value);
   resetGame();
 });
+
+reset.addEventListener("click", resetGame);
 
 function resetGame() {
   isGameOver = false;
